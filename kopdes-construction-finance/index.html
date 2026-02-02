@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAPORAN KEUANGAN Pembangunan KDMP Kuwu Bawor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f4f6;
+      }
+      .font-mono {
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      /* Print Specific Styles */
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      @page landscape {
+        size: A4 landscape;
+        margin: 0;
+      }
+
+      @media print {
+        html, body {
+          width: 210mm;
+          height: auto;
+          margin: 0;
+          padding: 0;
+          background-color: white;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        
+        .no-print {
+          display: none !important;
+        }
+        
+        .print-only {
+          display: block !important;
+        }
+        
+        /* Force background graphics */
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        .page-break {
+            break-after: page;
+            page-break-after: always;
+        }
+        
+        /* Portrait Page Container */
+        .a4-portrait {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm; /* Standard margin simulation */
+            margin: 0 auto;
+            background: white;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        /* Landscape Page Container */
+        .a4-landscape {
+            page: landscape;
+            width: 297mm;
+            min-height: 210mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background: white;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+      }
+
+      /* Screen Preview Styles for A4 */
+      @media screen {
+        .a4-portrait {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            padding: 20mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+        .a4-landscape {
+            width: 297mm;
+            min-height: 210mm;
+            margin: 20px auto;
+            padding: 20mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "xlsx": "https://esm.sh/xlsx@0.18.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

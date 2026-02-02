@@ -1,0 +1,7 @@
+{
+  "name": "KOPDES Construction Finance",
+  "description": "A comprehensive financial reporting tool for construction projects across 17 locations, featuring AI receipt scanning and PDF-style reporting.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
